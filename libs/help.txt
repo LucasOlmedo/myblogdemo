@@ -1,0 +1,37 @@
+// listar categorias
+$obj = $site->listaCategorias($app->conexao);
+
+if($obj->rowCount() > 0){
+	// faz a iteração com o retorno da consulta
+	while($row = $obj->fetch(PDO::FETCH_OBJ)){
+		echo " ".$row->categoriaid." ".$row->categoriatitulo."<br/>";
+	}
+}
+
+echo "<hr/>";
+
+// listar posts
+$obj = $site->listaPosts($app->conexao);
+if($obj->rowCount() > 0){
+	// faz a iteração com o retorno da consulta
+	while($row = $obj->fetch(PDO::FETCH_OBJ)){
+		echo " ".$row->posttitulo." ".$row->postcategoria." ".$row->postusuarionome."<br/>";
+	}
+}
+
+echo "<hr/>";
+
+// listar imagens post
+$obj = $site->listaImagensPost($app->conexao, 1, 0);
+if($obj->rowCount() > 0){
+	// faz a iteração com o retorno da consulta
+	while($row = $obj->fetch(PDO::FETCH_OBJ)){
+		echo " ".$row->imagemlegenda."<br/>";
+	}
+}
+
+// listaPost
+$post = $site->getPost($app->conexao, 1);
+if($post != false){
+	echo "<hr />".$post->posttitulo;
+}
