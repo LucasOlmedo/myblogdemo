@@ -4,15 +4,12 @@
 
     <div class="row">
 
-        <div class="col-sm-12 blog-main">
+        <div class="col-sm-12">
 
             <form class ="form-horizontal" action="index.php?r=contact" method="post" role="form">
 
                 <?php if($tpl["contato"]["msg"] != "") { ?>
-                <div class="alert marginTop <?=$tpl["contato"]["class"]?> alert-dismissible" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                <div class="alert marginTop <?=$tpl["contato"]["class"]?> ">
                     <strong><?=$tpl["contato"]["msg"]?></strong>
                 </div>
                 <?php } ?>
@@ -40,7 +37,7 @@
                 <div class="form-group">
                     <label for="mensagem">Mensagem:</label>
                     <div class="input-group">
-                        <textarea name="mensagem" id="mensagem" rows="15" class="form-control"></textarea>
+                        <textarea name="mensagem" id="mensagem" rows="10" class="form-control"></textarea>
                         <span class="input-group-addon"><font color="red">*</font></span
                     </div>
                 </div>
@@ -58,4 +55,5 @@
 
     <!-- /.row -->
 
+</div>
 </div>

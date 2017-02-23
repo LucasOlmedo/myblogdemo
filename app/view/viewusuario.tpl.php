@@ -38,7 +38,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<?php foreach($tpl["dados"]["posts"] as $post) { ?>
+					<?php foreach(@$tpl["dados"]["posts"] as $post) { ?>
 
 					<tr>
 						<td width="350"><?=$post["post_title"]?></td>

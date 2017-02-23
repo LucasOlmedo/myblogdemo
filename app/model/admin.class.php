@@ -131,7 +131,7 @@ class Admin
 							");
 
         $obj->bindParam(":usuario_id", $usuario_id);
-        return ($obj->execute()) ? $obj->fetchAll() : false;
+        return ($obj->execute()) ? $obj->fetchAll(PDO::FETCH_ASSOC) : false;
     }
 
 //  COMPONENTE 'CATEGORIA'
@@ -360,7 +360,7 @@ class Admin
 
         $obj->bindParam(":post_id", $post_id);
 
-        return ($obj->execute()) ? $obj->fetchAll() : false;
+        return ($obj->execute()) ? $obj->fetchAll(PDO::FETCH_ASSOC) : false;
 
     }
 

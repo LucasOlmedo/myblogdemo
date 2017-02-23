@@ -20,7 +20,7 @@ class App
         Área para definição de configurações para o site
     */
 
-    public $site_title = "Curso PHP - BLOG";
+    public $site_title = "MyBlog!";
     public $ext_img = array('jpg','gif','png');
 
     /*

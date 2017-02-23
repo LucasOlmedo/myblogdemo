@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="a9db5ad4-79a5-4854-a0bc-2853459db00e" name="000WEBHOST_MYBLOGDEMO" url="http://files.000webhost.com">
-        <fileTransfer host="files.000webhost.com" port="21" rootFolder="/public_html">
+      <webServer id="0e6bb7a9-2094-455a-94dd-bc3cc44cf344" name="myblogdemo_000webhost" url="http://files.000webhost.com">
+        <fileTransfer host="files.000webhost.com" port="21" rootFolder="/public_html/">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

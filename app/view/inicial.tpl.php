@@ -41,17 +41,15 @@
         -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-            <div class="sidebar-module sidebar-module-inset">
-                <h4>Sobre</h4>
-                <p>Fale um pouco sobre você</p>
-            </div>
+
 
             <!--
                 Carrega as categorias.
             -->
 
             <div class="sidebar-module">
-                <h4>Categorias</h4>
+                <h4>CATEGORIAS</h4>
+                <hr>
                 <ol class="list-unstyled">
                     <?php foreach($tpl["inicial"]["categorias"] as $categoria) { ?>
                         <li><font size="4">
@@ -64,6 +62,19 @@
                                 </a></font></li>
                     <?php } ?>
                 </ol>
+            </div>
+
+            <br>
+
+            <div class="sidebar-module sidebar-module-inset" align="center">
+                <h4>SOBRE</h4>
+                <hr>
+                <p><img style="border-radius: 200px;"
+                        src="upload/myphoto.jpg" alt="" width="150"/></p>
+                <br>
+                <p><strong>Lucas Olmedo Silva, 19 anos.</strong></p>
+                <p>Desenvolvedor PHP.</p>
+                <p>Blog desenvolvido utilizando PHP+MySQL.</p>
             </div>
 
         </div>

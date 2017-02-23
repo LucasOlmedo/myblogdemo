@@ -25,9 +25,9 @@
     Bloco de código para a exibição da imagem destaque.
 -->
 
-      <?php if($post->post_imagem_featured != "") { ?>
-		<img src="upload/<?=$post->post_imagem_featured?>" style="width: 100%; height: auto;"/>
-	<?php } ?>
+<!--      <?php /*if($post->post_imagem_featured != "") { */?>
+		<img src="upload/<?/*=$post->post_imagem_featured*/?>" style="width: 100%; height: auto;"/>
+	--><?php /*} */?>
 
 <!--
     Bloco de código para a exibição do texto.
@@ -53,25 +53,36 @@
 </div><!-- /.blog-main -->
 
 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-  <div class="sidebar-module sidebar-module-inset">
-	<h4>Sobre</h4>
-	<p>Fale um pouco sobre você</p>
-  </div>
-  <div class="sidebar-module">
-	<h4>Categorias</h4>
-	<ol class="list-unstyled">
-	   <?php foreach($tpl["verpost"]["categorias"] as $categoria) { ?>
-        <li><font size="4">
-        <a href="index.php?r=categoria&id=<?=$categoria["categoria_id"] ?>"
-           style="text-decoration:none; color:#777;"
-           onmouseover=" this.style.color='#210397';" onmouseout="this.style.color='#777';">
+    <div class="sidebar-module">
+        <h4>CATEGORIAS</h4>
+        <hr>
+        <ol class="list-unstyled">
+            <?php foreach($tpl["verpost"]["categorias"] as $categoria) { ?>
+                <li><font size="4">
+                        <a href="index.php?r=categoria&id=<?=$categoria["categoria_id"] ?>"
+                           style="text-decoration:none; color:#777;"
+                           onmouseover=" this.style.color='#210397';" onmouseout="this.style.color='#777';">
 
-            <?=$categoria["categoria_title"]?>
+                            <?=$categoria["categoria_title"]?>
 
-        </a></font></li>
-	  <?php } ?>
-	</ol>
-  </div>
+                        </a></font></li>
+            <?php } ?>
+        </ol>
+    </div>
+
+    <br>
+
+    <div class="sidebar-module sidebar-module-inset" align="center">
+        <h4>SOBRE</h4>
+        <hr>
+        <p><img style="border-radius: 200px;"
+                src="upload/myphoto.jpg" alt="" width="150"/></p>
+        <br>
+        <p><strong>Lucas Olmedo Silva, 19 anos.</strong></p>
+        <p>Desenvolvedor PHP.</p>
+        <p>Blog desenvolvido utilizando PHP+MySQL.</p>
+    </div>
+
 
 </div><!-- /.blog-sidebar -->
 

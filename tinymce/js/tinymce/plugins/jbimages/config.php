@@ -42,11 +42,11 @@
 	$config['upload_path'] = $_SERVER['DOCUMENT_ROOT'] . $config['img_path']; // Physical path. [Usually works fine like this]
 	*/
 
-    $config['img_path'] = '/myblogdemo/upload';
+    $config['img_path'] = '/upload';
  // Relative to domain name
     $config['upload_path'] = $_SERVER['DOCUMENT_ROOT'] . $config['img_path']; // Physical path. [Usually works fine like this]
-
-/*print_r($config);
+/*
+print_r($config);
 die;*/
 
 /*-------------------------------------------------------------------

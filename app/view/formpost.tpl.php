@@ -8,7 +8,7 @@
                 "insertdatetime media nonbreaking save table contextmenu directionality",
                 "emoticons template paste textcolor colorpicker textpattern jbimages"
             ],
-            toolbar1: "jbimages insertfile undo redo bold italic alignleft aligncenter alignright alignjustify bullist numlist outdent indent link media forecolor backcolor emoticons",
+            toolbar1: "jbimages insertfile undo redo bold italic alignleft aligncenter alignright alignjustify bullist numlist outdent indent link media forecolor backcolor",
             relative_urls: false
         });
 </script>

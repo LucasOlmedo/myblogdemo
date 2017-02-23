@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" promptOnLocalOverwrite="false">
     <serverData>
-      <paths name="000WEBHOST_MYBLOGDEMO">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/public_html/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="Apache_XAMPP">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="myblogdemo_000webhost">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

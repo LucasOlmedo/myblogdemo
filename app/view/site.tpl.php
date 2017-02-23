@@ -21,6 +21,9 @@
           <a class="blog-nav-item " href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
           <a class="blog-nav-item" href="index.php?r=contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Fale Conosco</a>
           <div class="pull-right">
+              <?php if(@session_start()){ ?>
+					<?="<span class=\"label label-danger\" style=\"margin:8px;\">".@$_SESSION["usuario_name"]."</span>"?>
+              <?php }?>
                 <a class="blog-nav-item" href="index.php?r=admin"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Área restrita</a>
           </div>
         </nav>
