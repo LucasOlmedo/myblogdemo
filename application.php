@@ -6,15 +6,12 @@ class App
         Definição das variáveis do Banco de Dados.
         Acesso ao database 'blog_php' localizado no host 'localhost'.
         Com seguintes dados de acesso:
-
-        Usuário : db_user -> 'root',
-        Senha   : db_pass -> ''
     */
 
-    public $db_host = "localhost";
-    public $db_user = "id896947_myblogdemo";
-    public $db_pass = "F33fw64rJWO#!qurgEyV";
-    public $db_name = "id896947_blog_php";
+    public $db_host = "";
+    public $db_user = "";
+    public $db_pass = "";
+    public $db_name = "";
 
     /*
         Área para definição de configurações para o site
